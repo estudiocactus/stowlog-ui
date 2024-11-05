@@ -77,3 +77,4 @@ export { Textarea } from "@nextui-org/input";
 export { TimeInput } from "@nextui-org/date-input";
 export { Tooltip } from "@nextui-org/tooltip";
 export { User } from "@nextui-org/user";
+export { useDisclosure } from "@nextui-org/react"

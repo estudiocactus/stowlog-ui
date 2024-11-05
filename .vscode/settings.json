@@ -1,0 +1,14 @@
+{
+  "cSpell.words": [
+    "listbox",
+    "Listbox",
+    "lucide",
+    "nextui",
+    "shadcn",
+    "stowlog",
+    "Stowlog"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "never"
+  },
+}

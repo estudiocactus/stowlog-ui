@@ -1,0 +1,45 @@
+{
+  "name": "@estudio-cactus/stowlog-ui",
+  "description": "Stowlog UI Components Library",
+  "type": "module",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./nextui": "./dist/components/nextui/index.js",
+    "./shadcn": "./dist/components/shadcn/index.js",
+    "./icons/lucide": "./dist/components/icons/lucide/index.js",
+    "./config": "./dist/config/index.js",
+    "./index.css": "./dist/index.css"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "dependencies": {
+    "@next/font": "^14.2.15",
+    "@nextui-org/react": "^2.4.8",
+    "@radix-ui/react-dialog": "^1.1.2",
+    "@radix-ui/react-icons": "^1.3.0",
+    "class-variance-authority": "^0.7.0",
+    "lucide-react": "^0.453.0",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.15",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "tsup": "^8.3.0",
+    "typescript": "^5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ]
+}

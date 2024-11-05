@@ -1,0 +1,15 @@
+.secondary-button-border-gradient {
+  border-image: url("data:image/svg+xml,%3csvg width='102' height='102' viewBox='0 0 102 102' fill='none' xmlns='http://www.w3.org/2000/svg'%3e %3crect x='0.5' y='0.5' width='101' height='101' rx='4.5' stroke='url(%23paint0_linear_0_44)'/%3e %3cdefs%3e %3clinearGradient id='paint0_linear_0_44' x1='1' y1='1' x2='103.586' y2='3.72672' gradientUnits='userSpaceOnUse'%3e %3cstop stop-color='%23FFA75F'/%3e %3cstop offset='1' stop-color='%236CB1BC'/%3e %3c/linearGradient%3e %3c/defs%3e %3c/svg%3e") 8 / 7px stretch;
+}
+
+.primary-button-gradient {
+  background: linear-gradient(
+    131deg,
+    #85afb1 0%,
+    #5a8b96 15.14%,
+    #2d4449 50.65%,
+    #3f4947 81.24%,
+    #6b5f4c 99.79%
+  );
+  transition: all 0.2s ease-out;
+}

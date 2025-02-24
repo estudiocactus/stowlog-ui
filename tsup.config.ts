@@ -3,13 +3,12 @@ import { defineConfig } from "tsup";
 export default defineConfig({
   entry: [
     "src/index.ts",
-    "src/components/nextui/index.ts",
-    "src/components/shadcn/index.ts",
+    "src/components/index.ts",
     "src/config/index.ts",
-    "src/components/icons/lucide/index.ts",
   ],
   format: ["esm", "cjs"],
-  dts: true, // Generate TypeScript declaration files
+  dts: true,
   sourcemap: true,
   clean: true,
+  external: ["@heroui/system-rsc", "@react-types/shared"],
 });

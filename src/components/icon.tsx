@@ -8,7 +8,7 @@ interface IconProps {
   className?: string;
 }
 
-export const LucideIcon = ({ name, color, size, className }: IconProps) => {
+export const Icon = ({ name, color, size, className }: IconProps) => {
   const IconComponent = icons[name as keyof typeof icons];  // Get the icon component
 
   // Add a check if the icon exists

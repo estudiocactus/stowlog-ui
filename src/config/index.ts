@@ -1,10 +1,10 @@
-import { NextUIPluginConfig } from "@nextui-org/react";
+import { HeroUIPluginConfig } from "@heroui/react";
 
 export {
-  nextui as stowlogUI,
-  NextUIProvider as StowlogUIProvider
-} from "@nextui-org/react";
-export const stowlogTheme: NextUIPluginConfig = {
+  heroui as stowlogUI,
+  HeroUIProvider as StowlogUIProvider
+} from "@heroui/react";
+export const stowlogTheme: HeroUIPluginConfig = {
   themes: {
     light: {
       extend: "light",

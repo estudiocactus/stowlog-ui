@@ -5,7 +5,4 @@ import "@/components/component-styles.css";
 export * from "@/config";
 
 // Components
-export * from "@/components/icons/lucide";
-export * from "@/components/shadcn";
-export * from "@/components/nextui";
-
+export * from "@/components";

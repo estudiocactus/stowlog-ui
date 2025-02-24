@@ -1,8 +1,8 @@
 'use client'
-import { Button as NextUIButton } from "@nextui-org/button";
-import { extendVariants } from "@nextui-org/system";
+import { Button as HeroUIButton } from "@heroui/button";
+import { extendVariants } from "@heroui/system";
 
-export const Button = extendVariants(NextUIButton, {
+export const Button = extendVariants(HeroUIButton, {
   variants: {
     color: {
       secondary: 'bg-gradient-to-br bg-transparent dark:from-[#61452F] from-[#F7ECE8] dark:via-[#1D2324] via-[#F0F1F2] dark:to-[#273235] to-[#DAE0E4] text-primary-600 dark:text-white secondary-button-border-gradient',

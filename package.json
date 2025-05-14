@@ -2,12 +2,13 @@
   "name": "@estudio-cactus/stowlog-ui",
   "description": "Stowlog UI Components Library",
   "type": "module",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "main": "dist/index.js",
   "exports": {
-    ".": "./dist/index.js",
-    "./componentes": "./dist/components/index.js",
+    "./components": "./dist/components/index.js",
     "./config": "./dist/config/index.js",
+    "./theme": "./dist/theme/index.js",
+    "./utils": "./dist/utils/index.js",
     "./index.css": "./dist/index.css"
   },
   "scripts": {

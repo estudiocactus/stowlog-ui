@@ -1,5 +1,29 @@
-.secondary-button-border-gradient {
-  border-image: url("data:image/svg+xml,%3csvg width='102' height='102' viewBox='0 0 102 102' fill='none' xmlns='http://www.w3.org/2000/svg'%3e %3crect x='0.5' y='0.5' width='101' height='101' rx='4.5' stroke='url(%23paint0_linear_0_44)'/%3e %3cdefs%3e %3clinearGradient id='paint0_linear_0_44' x1='1' y1='1' x2='103.586' y2='3.72672' gradientUnits='userSpaceOnUse'%3e %3cstop stop-color='%23FFA75F'/%3e %3cstop offset='1' stop-color='%236CB1BC'/%3e %3c/linearGradient%3e %3c/defs%3e %3c/svg%3e") 8 / 7px stretch;
+.secondary-button-border-gradient::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: inherit;
+  background: linear-gradient(
+    340deg,
+    #324b52,
+    #8cc5b3,
+    rgba(105, 142, 145, 0.2),
+    hsla(86, 6%, 55%, 0.3),
+    #e99953
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+.bg-circles-gradient {
+  background: url('data:image/svg+xml;utf8,<svg width="482" height="631" viewBox="0 0 482 631" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="g1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-143.497 760.607) rotate(-47.1329) scale(445.297 246.394)"><stop offset="0.54" stop-color="%23FF9C4A"/><stop offset="1" stop-color="%23FF9C4A" stop-opacity="0"/></radialGradient><radialGradient id="g2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(461.762 819.424) rotate(-83.7517) scale(766.28 356.435)"><stop offset="0.32" stop-color="%235A8B96"/><stop offset="1" stop-color="%235A8B96" stop-opacity="0"/></radialGradient></defs><rect x="0" y="122" width="482" height="509" fill="url(%23g1)" fill-opacity="0.1"/><rect x="0" y="0" width="482" height="631" fill="url(%23g2)" fill-opacity="0.15"/></svg>');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .primary-button-gradient {

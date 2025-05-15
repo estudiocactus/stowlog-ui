@@ -11,7 +11,7 @@ This library contains the UI components used in Stowlog.
 
 ```bash
 # use npm, yarn, pnpm
-npm install @estudio-cactus/stowlog-ui next-themes tailwindcss-animate
+npm install @estudio-cactus/stowlog-ui next-themes
 ```
 
 2. Update your tailwind.config.js file to include the Stowlog UI plugin and fonts:
@@ -20,7 +20,6 @@ npm install @estudio-cactus/stowlog-ui next-themes tailwindcss-animate
 // tailwind.config.ts
 import { stowlogTheme, stowlogUI } from "@estudio-cactus/stowlog-ui/config";
 import type { Config } from "tailwindcss";
-import tailwindcssAnimate from "tailwindcss-animate";
 
 const config: Config = {
   content: [
@@ -39,7 +38,6 @@ const config: Config = {
   darkMode: "class",
   plugins: [
     stowlogUI(stowlogTheme),
-    tailwindcssAnimate
   ],
 };
 export default config;

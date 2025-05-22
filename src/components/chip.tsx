@@ -1,1 +1,12 @@
-export { Chip } from '@heroui/chip'
+"use client";
+import { ChipProps, Chip as HeroUIChip } from "@heroui/chip";
+import { extendVariants, forwardRef } from "@heroui/system";
+import { ReactElement } from "react";
+
+export const Chip = forwardRef((props: ChipProps, ref) => {
+  const { ...otherProps } = props;
+
+  const MyComponent = extendVariants(HeroUIChip, {});
+
+  return <MyComponent {...otherProps} radius="sm" ref={ref} />;
+}) as (props: ChipProps) => ReactElement;

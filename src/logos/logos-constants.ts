@@ -1,0 +1,2 @@
+export const DEFAULT_ICON_STOWLOG_COLOR = "#FF9D54";
+export const DEFAULT_TEXT_STOWLOG_COLOR = "#2C4147";

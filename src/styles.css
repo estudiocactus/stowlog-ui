@@ -1,3 +1,15 @@
+:root {
+  --border-color-default: #e1e1e8;
+  --dev-banner-color-1: #f3f3f3;
+  --dev-banner-color-2: #f8f8f8;
+}
+
+.dark {
+  --border-color-default: #444553;
+  --dev-banner-color-1: #1e1e20;
+  --dev-banner-color-2: #252528;
+}
+
 .secondary-button-border-gradient::before {
   content: '';
   position: absolute;

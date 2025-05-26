@@ -1,5 +1,4 @@
-import React from 'react';
-import { icons } from 'lucide-react';
+import { icons } from "lucide-react";
 
 interface IconProps {
   name: keyof typeof icons;
@@ -9,14 +8,12 @@ interface IconProps {
 }
 
 export const Icon = ({ name, color, size, className }: IconProps) => {
-  const IconComponent = icons[name as keyof typeof icons];  // Get the icon component
+  const IconComponent = icons[name as keyof typeof icons];
 
-  // Add a check if the icon exists
   if (!IconComponent) {
     console.error(`LucideIcon: No icon found for the name '${name}'`);
-    return null;  // Return null if the icon is not found to avoid the error
+    return null;
   }
 
-  // Render the icon if found
   return <IconComponent color={color} size={size} className={className} />;
 };

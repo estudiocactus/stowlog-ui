@@ -1,28 +1,33 @@
-import { Alert as HeroUIAlert, AlertProps } from '@heroui/alert'
-import { cn } from '@heroui/react'
-import { extendVariants, forwardRef } from '@heroui/system'
-import { ReactElement, useMemo } from 'react'
+import { Alert as HeroUIAlert, AlertProps } from "@heroui/alert";
+import { cn } from "@heroui/react";
+import { extendVariants, forwardRef } from "@heroui/system";
+import { ReactElement, useMemo } from "react";
 
-type RestrictedColor = 'default' | 'success' | 'danger' | 'warning'
+type RestrictedColor = "default" | "success" | "danger" | "warning";
 
-type RestrictedProps = Omit<AlertProps, 'variant'> & {
-  color?: RestrictedColor
-}
+type RestrictedProps = Omit<AlertProps, "variant"> & {
+  color?: RestrictedColor;
+};
 
 export const Alert = forwardRef((props: AlertProps, ref) => {
-  const { className, ...otherProps } = props
+  const { className, ...otherProps } = props;
 
   const MyComponent = useMemo(
     () =>
-      extendVariants(HeroUIAlert, {}),
+      extendVariants(HeroUIAlert, {
+        defaultVariants: {
+          variant: "faded",
+        },
+      }),
     []
-  )
+  );
 
   return (
     <MyComponent
       {...otherProps}
-      className={cn(className, 'cursor-pointer')}
+      className={cn(className, "cursor-pointer")}
+      variant="faded"
       ref={ref}
     />
-  )
-}) as (props: RestrictedProps) => ReactElement
+  );
+}) as (props: RestrictedProps) => ReactElement;

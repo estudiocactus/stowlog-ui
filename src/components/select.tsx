@@ -1,35 +1,35 @@
-'use client'
+"use client";
 
-import { Select as HeroUISelect, SelectProps } from '@heroui/select'
-import { extendVariants, forwardRef } from '@heroui/system'
-import { ForwardedRef, ReactElement, useMemo } from 'react'
-export { SelectItem, SelectSection } from '@heroui/select'
+import { Select as HeroUISelect, SelectProps } from "@heroui/select";
+import { extendVariants, forwardRef } from "@heroui/system";
+import { ForwardedRef, ReactElement, useMemo } from "react";
+export { SelectItem, SelectSection } from "@heroui/select";
 
-type RestrictedSelectProps = Omit<SelectProps, 'color' | 'variant'>
+type RestrictedSelectProps = Omit<SelectProps, "color" | "variant">;
 
-export const Select = forwardRef(function Select<T extends object>(
+export const Select = forwardRef(function Select(
   props: RestrictedSelectProps,
   ref: ForwardedRef<HTMLSelectElement>
 ) {
-  const { ...otherProps } = props
+  const { ...otherProps } = props;
   const MyComponent = useMemo(
     () =>
       extendVariants(HeroUISelect, {
         variants: {
           variant: {
             bordered: {
-              trigger: 'shadow-none border bg-content1',
-              label: 'text-foreground-400'
-            }
-          }
+              trigger: "shadow-none border bg-content1",
+              label: "text-foreground-400",
+            },
+          },
         },
         defaultVariants: {
-          color: 'default',
-          variant: 'bordered'
-        }
+          color: "default",
+          variant: "bordered",
+        },
       }),
     []
-  ) as typeof HeroUISelect
+  ) as typeof HeroUISelect;
 
   return (
     <MyComponent
@@ -39,5 +39,5 @@ export const Select = forwardRef(function Select<T extends object>(
       radius={undefined}
       ref={ref}
     />
-  )
-}) as <T extends object>(props: SelectProps<T>) => ReactElement
+  );
+}) as <T extends object>(props: SelectProps<T>) => ReactElement;

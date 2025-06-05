@@ -1,21 +1,21 @@
 "use client";
+import { NumberInput as HeroUIInput, NumberInputProps } from "@heroui/react";
 import { extendVariants, forwardRef } from "@heroui/system";
-import { Tabs as HeroUITabs, TabsProps } from "@heroui/tabs";
 import { ReactElement, useMemo } from "react";
 
-type CustomTabsProps = Omit<TabsProps, "variant" | "color">;
+type RestrictedInputProps = Omit<NumberInputProps, "variant">;
 
-export const Tabs = forwardRef((props: CustomTabsProps, ref) => {
+export const NumberInput = forwardRef((props: RestrictedInputProps, ref) => {
   const { ...otherProps } = props;
 
   const MyComponent = useMemo(
     () =>
-      extendVariants(HeroUITabs, {
+      extendVariants(HeroUIInput, {
         variants: {
           variant: {
             bordered: {
-              tabList:
-                "shadow-none h-full bg-default-100 border border-default-300",
+              inputWrapper: "shadow-none bg-content1",
+              input: "placeholder:text-default-400",
             },
           },
         },
@@ -30,12 +30,9 @@ export const Tabs = forwardRef((props: CustomTabsProps, ref) => {
   return (
     <MyComponent
       {...otherProps}
-      radius={undefined}
-      color="default"
       variant="bordered"
+      radius={undefined}
       ref={ref}
     />
   );
-}) as (props: CustomTabsProps) => ReactElement;
-
-export { Tab } from "@heroui/tabs";
+}) as (props: RestrictedInputProps) => ReactElement;

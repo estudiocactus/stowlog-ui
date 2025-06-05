@@ -4,8 +4,9 @@ import { SVGAttributes, SVGProps, forwardRef } from "react";
 const RiskAssessmentIcon = forwardRef<
   SVGSVGElement,
   SVGAttributes<SVGSVGElement>
->((props: SVGProps<SVGSVGElement>) => (
+>((props: SVGProps<SVGSVGElement>, ref) => (
   <svg
+    ref={ref}
     width="181"
     height="210"
     viewBox="0 0 181 210"

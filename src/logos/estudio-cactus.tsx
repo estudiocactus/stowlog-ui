@@ -2,8 +2,9 @@ import { DEFAULT_TEXT_STOWLOG_COLOR } from "@/logos/logos-constants";
 import { SVGAttributes, SVGProps, forwardRef } from "react";
 
 const EstudioCactus = forwardRef<SVGSVGElement, SVGAttributes<SVGSVGElement>>(
-  (props: SVGProps<SVGSVGElement>) => (
+  (props: SVGProps<SVGSVGElement>, ref) => (
     <svg
+      ref={ref}
       width="547"
       height="140"
       viewBox="0 0 547 140"

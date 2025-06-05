@@ -2,8 +2,9 @@ import { DEFAULT_ICON_STOWLOG_COLOR } from "@/logos/logos-constants";
 import { SVGAttributes, SVGProps, forwardRef } from "react";
 
 const StowlogIcon = forwardRef<SVGSVGElement, SVGAttributes<SVGSVGElement>>(
-  (props: SVGProps<SVGSVGElement>) => (
+  (props: SVGProps<SVGSVGElement>, ref) => (
     <svg
+      ref={ref}
       width="132"
       height="154"
       viewBox="0 0 132 154"

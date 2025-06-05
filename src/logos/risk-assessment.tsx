@@ -5,8 +5,9 @@ import {
 import { SVGAttributes, SVGProps, forwardRef } from "react";
 
 const RiskAssessment = forwardRef<SVGSVGElement, SVGAttributes<SVGSVGElement>>(
-  (props: SVGProps<SVGSVGElement>) => (
+  (props: SVGProps<SVGSVGElement>, ref) => (
     <svg
+      ref={ref}
       width="709"
       height="142"
       viewBox="0 0 709 142"

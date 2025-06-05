@@ -62,8 +62,8 @@ export const Logo = ({
   return (
     <div>
       <IconComponent
-        width={width || "auto"}
-        height={height || "auto"}
+        width={width || "100%"}
+        height={height || "100%"}
         fill={fill}
       />
     </div>

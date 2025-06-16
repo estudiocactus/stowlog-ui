@@ -2,11 +2,17 @@ import { EstudioCactus } from "@/logos/estudio-cactus";
 import { EstudioCactusIcon } from "@/logos/estudio-cactus-icon";
 import { RiskAssessment } from "@/logos/risk-assessment";
 import { RiskAssessmentIcon } from "@/logos/risk-assessment-icon";
+import { SafetyInduction } from "@/logos/safety-induction";
+import { SafetyInductionIcon } from "@/logos/safety-induction-icon";
 import { Stowlog } from "@/logos/stowlog";
 import { StowlogIcon } from "@/logos/stowlog-icon";
 import React from "react";
 
-type LogoName = "stowlog" | "estudioCactus" | "riskAssessment";
+type LogoName =
+  | "stowlog"
+  | "estudioCactus"
+  | "riskAssessment"
+  | "safetyInduction";
 type Color = "dark" | "light" | "original";
 
 const LogoMap: {
@@ -26,6 +32,10 @@ const LogoMap: {
   riskAssessment: {
     icon: RiskAssessmentIcon,
     component: RiskAssessment,
+  },
+  safetyInduction: {
+    icon: SafetyInductionIcon,
+    component: SafetyInduction,
   },
 };
 

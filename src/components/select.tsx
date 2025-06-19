@@ -20,6 +20,7 @@ export const Select = forwardRef(function Select(
             bordered: {
               trigger: "shadow-none border bg-content1",
               label: "text-foreground-400",
+              input: "placeholder:text-default-400",
             },
           },
         },

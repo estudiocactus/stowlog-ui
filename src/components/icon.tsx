@@ -1,13 +1,10 @@
-import { icons } from "lucide-react";
+import { icons, LucideProps } from "lucide-react";
 
-interface IconProps {
+interface IconProps extends LucideProps {
   name: keyof typeof icons;
-  color?: string;
-  size?: string | number;
-  className?: string;
 }
 
-export const Icon = ({ name, color, size, className }: IconProps) => {
+export const Icon = ({ name, ...props }: IconProps) => {
   const IconComponent = icons[name as keyof typeof icons];
 
   if (!IconComponent) {
@@ -15,5 +12,5 @@ export const Icon = ({ name, color, size, className }: IconProps) => {
     return null;
   }
 
-  return <IconComponent color={color} size={size} className={className} />;
+  return <IconComponent {...props} />;
 };

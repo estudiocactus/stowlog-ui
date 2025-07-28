@@ -24,7 +24,6 @@ export default defineConfig({
     "@react-types/shared",
     "use-sync-external-store",
     "use-sync-external-store/shim",
-    "lucide-react",
   ],
   noExternal: [],
 });

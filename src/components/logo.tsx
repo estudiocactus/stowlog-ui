@@ -6,13 +6,16 @@ import { SafetyInduction } from "@/logos/safety-induction";
 import { SafetyInductionIcon } from "@/logos/safety-induction-icon";
 import { Stowlog } from "@/logos/stowlog";
 import { StowlogIcon } from "@/logos/stowlog-icon";
+import { Training } from "@/logos/training";
+import { TrainingIcon } from "@/logos/training-icon";
 import React from "react";
 
 type LogoName =
   | "stowlog"
   | "estudioCactus"
   | "riskAssessment"
-  | "safetyInduction";
+  | "safetyInduction"
+  | "training";
 type Color = "dark" | "light" | "original";
 
 const LogoMap: {
@@ -36,6 +39,10 @@ const LogoMap: {
   safetyInduction: {
     icon: SafetyInductionIcon,
     component: SafetyInduction,
+  },
+  training: {
+    icon: TrainingIcon,
+    component: Training,
   },
 };
 

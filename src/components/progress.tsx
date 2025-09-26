@@ -1,1 +1,1 @@
-export { Progress } from "@heroui/progress";
+export { Progress } from "@heroui/react";

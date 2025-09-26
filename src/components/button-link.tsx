@@ -1,7 +1,5 @@
 "use client";
-import { Link as HeroUILink, LinkProps } from "@heroui/link";
-import { cn } from "@heroui/react";
-import { extendVariants, forwardRef } from "@heroui/system";
+import { Link as HeroUILink, LinkProps, cn, extendVariants, forwardRef } from "@heroui/react";
 import { ReactElement, useMemo } from "react";
 
 type RestrictedColor = "foreground" | "success" | "danger" | "warning";

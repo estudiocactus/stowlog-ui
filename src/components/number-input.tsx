@@ -1,6 +1,5 @@
 "use client";
-import { NumberInput as HeroUIInput, NumberInputProps } from "@heroui/react";
-import { extendVariants, forwardRef } from "@heroui/system";
+import { NumberInput as HeroUIInput, NumberInputProps, extendVariants, forwardRef } from "@heroui/react";
 import { ReactElement, useMemo } from "react";
 
 type RestrictedInputProps = Omit<NumberInputProps, "variant">;

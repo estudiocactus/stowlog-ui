@@ -1,8 +1,9 @@
 import {
   DateRangePicker as HeroUIDatePicker,
   DateRangePickerProps,
-} from "@heroui/date-picker";
-import { extendVariants, forwardRef } from "@heroui/system";
+  extendVariants,
+  forwardRef
+} from "@heroui/react";
 import { ReactElement, useMemo } from "react";
 
 type RestrictedDatePickerProps = Omit<DateRangePickerProps, "variant"> & {};

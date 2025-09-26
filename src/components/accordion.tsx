@@ -1,1 +1,1 @@
-export { Accordion, AccordionItem } from '@heroui/accordion'
+export { Accordion, AccordionItem } from "@heroui/react";

@@ -1,1 +1,1 @@
-export { Textarea } from "@heroui/input";
+export { Textarea } from "@heroui/react";

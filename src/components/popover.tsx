@@ -1,1 +1,1 @@
-export { Popover, PopoverContent, PopoverTrigger } from '@heroui/popover'
+export { Popover, PopoverContent, PopoverTrigger } from '@heroui/react'

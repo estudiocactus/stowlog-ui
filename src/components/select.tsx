@@ -1,9 +1,8 @@
 "use client";
 
-import { Select as HeroUISelect, SelectProps } from "@heroui/select";
-import { extendVariants, forwardRef } from "@heroui/system";
+import { Select as HeroUISelect, SelectProps, SelectItem, SelectSection, extendVariants, forwardRef } from "@heroui/react";
 import { ForwardedRef, ReactElement, useMemo } from "react";
-export { SelectItem, SelectSection } from "@heroui/select";
+export { SelectItem, SelectSection };
 
 type RestrictedSelectProps = Omit<SelectProps, "color" | "variant">;
 

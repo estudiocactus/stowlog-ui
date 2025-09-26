@@ -1,5 +1,4 @@
-import { extendVariants, forwardRef } from "@heroui/system";
-import { Table as HeroUITable, TableProps } from "@heroui/table";
+import { extendVariants, forwardRef, Table as HeroUITable, TableProps, TableBody, TableCell, TableColumn, TableHeader, TableRow } from "@heroui/react";
 import { ReactElement, useMemo } from "react";
 
 export const Table = forwardRef((props: TableProps, ref) => {
@@ -33,4 +32,4 @@ export {
   TableColumn,
   TableHeader,
   TableRow,
-} from "@heroui/table";
+};

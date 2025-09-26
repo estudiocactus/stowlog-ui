@@ -1,1 +1,1 @@
-export { Slider } from "@heroui/slider";
+export { Slider } from "@heroui/react";

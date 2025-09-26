@@ -1,1 +1,1 @@
-export { Listbox, ListboxSection, ListboxItem } from "@heroui/listbox";
+export { Listbox, ListboxSection, ListboxItem } from "@heroui/react";

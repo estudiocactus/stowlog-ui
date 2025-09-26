@@ -1,1 +1,1 @@
-export { Divider } from '@heroui/divider'
+export { Divider } from '@heroui/react'

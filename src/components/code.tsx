@@ -1,1 +1,1 @@
-export { Code } from "@heroui/code";
+export { Code } from "@heroui/react";

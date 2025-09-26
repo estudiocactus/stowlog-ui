@@ -1,6 +1,5 @@
 "use client";
-import { ButtonProps, Button as HeroUIButton } from "@heroui/button";
-import { extendVariants, forwardRef } from "@heroui/system";
+import { ButtonProps, Button as HeroUIButton, extendVariants, forwardRef } from "@heroui/react";
 import { ReactElement, useMemo } from "react";
 
 type RestrictedButtonProps = Omit<ButtonProps, "variant" | "color">;

@@ -1,1 +1,1 @@
-export { Snippet } from "@heroui/snippet";
+export { Snippet } from "@heroui/react";

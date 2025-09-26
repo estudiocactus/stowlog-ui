@@ -1,1 +1,1 @@
-export { Spinner } from '@heroui/spinner'
+export { Spinner } from "@heroui/react";

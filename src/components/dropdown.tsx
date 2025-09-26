@@ -4,4 +4,4 @@ export {
   DropdownMenu,
   DropdownSection,
   DropdownTrigger
-} from '@heroui/dropdown'
+} from '@heroui/react'

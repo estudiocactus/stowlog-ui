@@ -4,4 +4,4 @@ export {
   DrawerHeader,
   DrawerBody,
   DrawerFooter,
-} from "@heroui/drawer";
+} from "@heroui/react";

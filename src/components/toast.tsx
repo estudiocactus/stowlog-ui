@@ -1,1 +1,1 @@
-export { addToast, ToastProvider } from "@heroui/toast";
+export { addToast, ToastProvider } from "@heroui/react";

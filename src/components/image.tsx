@@ -1,1 +1,1 @@
-export { Image } from "@heroui/image";
+export { Image } from "@heroui/react";

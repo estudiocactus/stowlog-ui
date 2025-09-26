@@ -1,6 +1,5 @@
 "use client";
-import { CardProps, Card as HeroUICard } from "@heroui/card";
-import { extendVariants, forwardRef } from "@heroui/system";
+import { CardProps, Card as HeroUICard, CardBody, CardFooter, CardHeader, extendVariants, forwardRef } from "@heroui/react";
 import { ReactElement, useMemo } from "react";
 
 export const Card = forwardRef((props: CardProps, ref) => {
@@ -28,4 +27,4 @@ export const Card = forwardRef((props: CardProps, ref) => {
   );
 }) as (props: CardProps) => ReactElement;
 
-export { CardBody, CardFooter, CardHeader } from "@heroui/card";
+export { CardBody, CardFooter, CardHeader };

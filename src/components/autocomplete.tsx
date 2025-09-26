@@ -3,10 +3,13 @@
 import {
   Autocomplete as HeroUIAutocomplete,
   AutocompleteProps,
-} from "@heroui/autocomplete";
-import { extendVariants, forwardRef } from "@heroui/system";
+  AutocompleteItem,
+  AutocompleteSection,
+  extendVariants,
+  forwardRef,
+} from "@heroui/react";
 import { ReactElement, useMemo } from "react";
-export { AutocompleteItem, AutocompleteSection } from "@heroui/autocomplete";
+export { AutocompleteItem, AutocompleteSection };
 
 type RestrictedAutocompleteProps = Omit<AutocompleteProps, "color" | "variant">;
 
@@ -37,4 +40,4 @@ export const Autocomplete = forwardRef(function Autocomplete(
       ref={ref}
     />
   );
-}) as (props: RestrictedAutocompleteProps) => ReactElement;
+}) as <T extends object>(props: AutocompleteProps<T>) => ReactElement;

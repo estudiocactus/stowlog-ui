@@ -1,6 +1,4 @@
-import { Alert as HeroUIAlert, AlertProps } from "@heroui/alert";
-import { cn } from "@heroui/react";
-import { extendVariants, forwardRef } from "@heroui/system";
+import { Alert as HeroUIAlert, AlertProps, cn, extendVariants, forwardRef } from "@heroui/react";
 import { ReactElement, useMemo } from "react";
 
 type RestrictedColor = "default" | "success" | "danger" | "warning";

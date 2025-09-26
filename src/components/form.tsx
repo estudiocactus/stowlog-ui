@@ -1,1 +1,1 @@
-export { Form } from "@heroui/form";
+export { Form } from "@heroui/react";

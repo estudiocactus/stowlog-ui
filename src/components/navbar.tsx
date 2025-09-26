@@ -5,5 +5,5 @@ export {
   NavbarItem,
   NavbarMenu,
   NavbarMenuItem,
-  NavbarMenuToggle
-} from '@heroui/navbar'
+  NavbarMenuToggle,
+} from "@heroui/react";

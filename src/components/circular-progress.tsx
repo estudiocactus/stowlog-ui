@@ -1,1 +1,1 @@
-export { CircularProgress } from "@heroui/progress";
+export { CircularProgress } from "@heroui/react";

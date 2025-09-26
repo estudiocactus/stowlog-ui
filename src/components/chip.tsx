@@ -1,6 +1,5 @@
 "use client";
-import { ChipProps, Chip as HeroUIChip } from "@heroui/chip";
-import { extendVariants, forwardRef } from "@heroui/system";
+import { ChipProps, Chip as HeroUIChip, extendVariants, forwardRef } from "@heroui/react";
 import { ReactElement, useMemo } from "react";
 
 export const Chip = forwardRef((props: ChipProps, ref) => {

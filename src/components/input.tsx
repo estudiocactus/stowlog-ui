@@ -1,6 +1,5 @@
 'use client'
-import { Input as HeroUIInput, InputProps } from '@heroui/input'
-import { extendVariants, forwardRef } from '@heroui/system'
+import { Input as HeroUIInput, InputProps, extendVariants, forwardRef } from '@heroui/react'
 import { ReactElement, useMemo } from 'react'
 
 type RestrictedInputProps = Omit<InputProps, 'variant'>

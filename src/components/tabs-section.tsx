@@ -1,12 +1,12 @@
-'use client'
-import { extendVariants, forwardRef } from '@heroui/system'
-import { Tabs as HeroUITabs, TabsProps } from '@heroui/tabs'
-import { ReactElement, useMemo } from 'react'
+"use client";
+import { extendVariants, forwardRef } from "@heroui/system";
+import { Tabs as HeroUITabs, TabsProps, Tab } from "@heroui/react";
+import { ReactElement, useMemo } from "react";
 
-type CustomTabsProps = Omit<TabsProps, 'variant' | 'color'>
+type CustomTabsProps = Omit<TabsProps, "variant" | "color">;
 
 export const TabsSection = forwardRef((props: CustomTabsProps, ref) => {
-  const { ...otherProps } = props
+  const { ...otherProps } = props;
 
   const MyComponent = useMemo(
     () =>
@@ -14,20 +14,20 @@ export const TabsSection = forwardRef((props: CustomTabsProps, ref) => {
         variants: {
           variant: {
             underlined: {
-              base: 'w-full border-b-1.5',
-              tabList: 'p-0',
-              tab: 'mx-0',
-              cursor: 'w-full'
-            }
-          }
+              base: "w-full border-b-1.5",
+              tabList: "p-0",
+              tab: "mx-0",
+              cursor: "w-full",
+            },
+          },
         },
         defaultVariants: {
-          color: 'default',
-          variant: 'underlined'
-        }
+          color: "default",
+          variant: "underlined",
+        },
       }),
     []
-  )
+  );
 
   return (
     <MyComponent
@@ -37,7 +37,7 @@ export const TabsSection = forwardRef((props: CustomTabsProps, ref) => {
       variant="underlined"
       ref={ref}
     />
-  )
-}) as (props: CustomTabsProps) => ReactElement
+  );
+}) as (props: CustomTabsProps) => ReactElement;
 
-export { Tab } from '@heroui/tabs'
+export { Tab };

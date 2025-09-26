@@ -1,1 +1,1 @@
-export { RangeCalendar } from "@heroui/calendar";
+export { RangeCalendar } from "@heroui/react";

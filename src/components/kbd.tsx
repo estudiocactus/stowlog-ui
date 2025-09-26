@@ -1,1 +1,1 @@
-export { Kbd } from "@heroui/kbd";
+export { Kbd } from "@heroui/react";

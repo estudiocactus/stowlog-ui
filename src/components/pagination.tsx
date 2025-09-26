@@ -1,1 +1,1 @@
-export { Pagination } from '@heroui/pagination'
+export { Pagination } from '@heroui/react'

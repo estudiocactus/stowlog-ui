@@ -50,4 +50,5 @@ export * from "./calendar";
 export * from "./date-input";
 export * from "./form";
 export * from "./toast";
+export * from "./icon";
 export * from "./scroll-shadow";

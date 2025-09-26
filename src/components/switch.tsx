@@ -1,2 +1,2 @@
-export { Switch } from '@heroui/switch'
-export type { SwitchProps } from '@heroui/switch'
+export { Switch } from '@heroui/react'
+export type { SwitchProps } from '@heroui/react'

@@ -1,1 +1,1 @@
-export { Breadcrumbs, BreadcrumbItem } from "@heroui/breadcrumbs";
+export { Breadcrumbs, BreadcrumbItem } from "@heroui/react";

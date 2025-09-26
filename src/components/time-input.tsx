@@ -1,1 +1,1 @@
-export { TimeInput } from "@heroui/date-input";
+export { TimeInput } from "@heroui/react";

@@ -1,1 +1,1 @@
-export { InputOtp } from "@heroui/input-otp";
+export { InputOtp } from "@heroui/react";

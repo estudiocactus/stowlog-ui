@@ -1,6 +1,6 @@
 "use client";
 import { extendVariants, forwardRef } from "@heroui/system";
-import { Tabs as HeroUITabs, TabsProps } from "@heroui/tabs";
+import { Tabs as HeroUITabs, TabsProps } from "@heroui/react";
 import { ReactElement, useMemo } from "react";
 
 type CustomTabsProps = Omit<TabsProps, "variant" | "color">;
@@ -37,5 +37,3 @@ export const Tabs = forwardRef((props: CustomTabsProps, ref) => {
     />
   );
 }) as (props: CustomTabsProps) => ReactElement;
-
-export { Tab } from "@heroui/tabs";
